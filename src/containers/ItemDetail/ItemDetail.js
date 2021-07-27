@@ -1,12 +1,12 @@
 import React from 'react';
 import App from '../../App';
 
-const About = () => {
+const ItemDetail = () => {
     return (
         <div>
-            <h1>About Page</h1>
+            <h1>Items</h1>
         </div>
     );
 }
 
-export default About;
+export default ItemDetail;
