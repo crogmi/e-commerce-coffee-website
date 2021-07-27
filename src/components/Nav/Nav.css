@@ -1,5 +1,9 @@
-.text-link {
+.text-links {
     text-decoration: none;
+}
+
+.nav-logo {
+    color: white;
 }
 
 .nav-links {
