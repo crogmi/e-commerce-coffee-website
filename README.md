@@ -19,7 +19,7 @@
 
 ## Project Status
 
-
+The project is still in progress. Updates will be made continuously in the coming weeks.
 
 ## Room for Improvement
 
