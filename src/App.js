@@ -1,84 +1,48 @@
 import React, { useState } from 'react';
-import Nav from './components/Nav/Nav';
+import Navbar from './components/Navbar/Navbar';
+import Home from './containers/Home/Home';
 import About from './containers/AboutPage/AboutPage';
 import Order from './containers/OrderPage/OrderPage';
-import ItemDetail from './containers/ItemDetail/ItemDetail';
+import Product from './containers/Product/Product';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import './App.css';
 
-const Home = () => {
-  return (
-    <div className='Home'>
-      <h1 className='page-title'>CoCo Coffee</h1>
-    </div>
-  );
-};
-
-
-const App = () => {
+const App = ({match}) => {
 
   const ROUTES = {
+    HOME: '/',
     ABOUT: '/about',
     ORDER: '/order',
-    ORDERID: '/order/:id'
+    ORDERID: '/order/:_id'
   }
-  
-  const [drinks, setDrinks] = useState([{
-      name: 'Latte',
-      milk: 'Whole',
-      syrup: 0,
-      drinkTemp: 'Hot',
-      tempChange: true,
-      flavor: 'Regular',
-      flavorChange: true,
-      itemNumber: 0
-    }, {
-      name: 'Coffee',
-      milk: 'None',
-      syrup: 0,
-      drinkTemp: 'Hot',
-      tempChange: true,
-      flavor: 'Regular',
-      flavorChange: false,
-      itemNumber: 1
-    }, 
-    { name: 'Cold Brew',
-      milk: 'None',
-      syrup: 0,
-      drinkTemp: 'Cold',
-      tempChange: false,
-      flavor: 'Regular',
-      flavorChange: false,
-      itemNumber: 2
-    },
-    { name: 'Espresso',
-      milk: 'None',
-      syrup: 0,
-      drinkTemp: 'Hot',
-      tempChange: false,
-      flavor: 'Regular',
-      flavorChange: false,
-      itemNumber: 3
-  }]);
 
+  const [cart, setCart] = useState([]);
+
+  const addToCart = (name, price, syrup, milk, flavor, temp) => {
+    let product = {
+      name: name,
+      price: price,
+      syrup: syrup,
+      milk: milk,
+      flavor: flavor,
+      temp: temp
+    };
+
+    setCart((prev) => {
+      return [...prev, product]
+    });
+  };
 
   return (
     <Router>
       <div className='App'>
-        <Nav />
+        <Navbar />
         <main>
           <Switch>
-            <Route path='/' exact component={Home} />
-            <Route path={ROUTES.ABOUT}>
-              <About />
-            </Route>
-            <Route path={ROUTES.ORDER}>
-              <Order drinks={drinks} />
-            </Route>
-            {/*Confirm if I need to keep this item detail route - should only be accessed from order page */}
-            <Route path={ROUTES.ORDERID}>
-              <ItemDetail />
-            </Route>
+            <Route path={ROUTES.HOME} exact component={Home} />
+            <Route path={ROUTES.ABOUT} component={About} />
+            <Route path={ROUTES.ORDER} exact component={Order} />
+            <Route path={ROUTES.ORDERID} component={Product}/>
           </Switch>
         </main>
       </div>

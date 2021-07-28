@@ -9,4 +9,14 @@ describe('App', () => {
         render(<App />)
         screen.debug();
     })
-})
+
+
+/* *********************************** Snapshot Test *********************************** */
+
+    it('renders correctly', () => {
+        const app = render(<App />);
+        expect(app).toMatchSnapshot();
+    })
+
+    
+});

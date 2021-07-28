@@ -1,12 +1,16 @@
 import React from 'react';
 import { render, fireEvent, waitFor, screen } from '@testing-library/react';
-import ItemDetail from './ItemDetail';
+import Product from './Product';
 
 /* *********************************** Smoke Test *********************************** */
 
-describe('Item Detail', () => {
+describe('Product', () => {
     it('renders without crashing', () => {
-        render(<ItemDetail />)
+        render(<Product />)
         screen.debug();
     })
 })
+
+
+/* *********************************** Snapshot Test *********************************** */
+

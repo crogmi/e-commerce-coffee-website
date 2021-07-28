@@ -1,14 +1,13 @@
 import React from 'react';
 import ProductList from '../../components/ProductList/ProductList';
-import App from '../../App';
 
-const Order = (props) => {
+const Order = () => {
     return (
         <div>
             <section className='page-section'>
                 <h1 className='page-title'>Order here</h1>
                 <hr />
-                <ProductList drinks={props.drinks} />
+                <ProductList />
             </section>
         </div>
     );

@@ -1,0 +1,54 @@
+[
+    {
+        "name": "Latte",
+        "milk": "Whole",
+        "syrup": 0,
+        "temp": "Hot",
+        "tempChange": true,
+        "flavor": "Regular",
+        "flavorChange": true,
+        "price": 5.00,
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "_id": "0",
+        "imageIndex": 0
+    }, 
+    {
+        "name": "Coffee",
+        "milk": "None",
+        "syrup": 0,
+        "temp": "Hot",
+        "tempChange": true,
+        "flavor": "Regular",
+        "flavorChange": false,
+        "price": 3.00,
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "_id": "1",
+        "imageIndex": 1
+    }, 
+    { 
+        "name": "Cold Brew",
+        "milk": "None",
+        "syrup": 0,
+        "temp": "Cold",
+        "tempChange": false,
+        "flavor": "Regular",
+        "flavorChange": false,
+        "price": 5.00,
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "_id": "2",
+        "imageIndex": 2
+    },
+    { 
+        "name": "Espresso",
+        "milk": "None",
+        "syrup": 0,
+        "temp": "Hot",
+        "tempChange": false,
+        "flavor": "Regular",
+        "flavorChange": false,
+        "price": 4.00,
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "_id": "3",
+        "imageIndex": 3
+    }
+]

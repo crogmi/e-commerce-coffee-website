@@ -1,0 +1,23 @@
+img {
+    max-width: 500px;
+}
+
+.product-container {
+    display: grid;
+}
+
+.product-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+Link {
+    text-decoration: none;
+}
+
+.product-name {
+    text-decoration: none;
+    color: black;
+}
