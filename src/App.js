@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Navbar from './components/Navbar/Navbar';
 import Home from './containers/Home/Home';
 import About from './containers/AboutPage/AboutPage';
@@ -15,23 +15,6 @@ const App = ({match}) => {
     ORDER: '/order',
     ORDERID: '/order/:_id'
   }
-
-  const [cart, setCart] = useState([]);
-
-  const addToCart = (name, price, syrup, milk, flavor, temp) => {
-    let product = {
-      name: name,
-      price: price,
-      syrup: syrup,
-      milk: milk,
-      flavor: flavor,
-      temp: temp
-    };
-
-    setCart((prev) => {
-      return [...prev, product]
-    });
-  };
 
   return (
     <Router>

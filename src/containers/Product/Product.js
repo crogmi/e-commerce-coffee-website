@@ -23,7 +23,8 @@ const Product = (props) => {
             <img src={images[imageIndex]} alt=''/>
             <h3>{price}</h3>
             <h3>{description}</h3>
-            <OrderForm product={product}/>
+            <OrderForm product={product}
+                       image={images[imageIndex]} />
         </div>
     );
 };

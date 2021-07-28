@@ -29,7 +29,7 @@
         "name": "Cold Brew",
         "milk": "None",
         "syrup": 0,
-        "temp": "Cold",
+        "temp": "Iced",
         "tempChange": false,
         "flavor": "Regular",
         "flavorChange": false,
