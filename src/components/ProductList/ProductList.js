@@ -3,6 +3,7 @@ import list from '../../products.json';
 import { Link } from 'react-router-dom';
 
 // Import images and CSS
+// ************* SEE IF WE CAN PUT IMAGES INTO APP.JS AND PASSING THE IMAGE DOWN AS PROPS TO PRODUCTLIST AND PRODUCT PAGES - THINK THAT THIS IS POSSIBLE *****************
 import CoffeeImg from '../../ProductImages/coffee.jpg';
 import LatteImg from '../../ProductImages/latte.jpg';
 import EspressoImg from '../../ProductImages/espresso.jpg';
