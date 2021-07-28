@@ -22,6 +22,7 @@ REACT.md
 jest.config.js
 .babelrc
 __mocks__
+yarn.lock
 
 npm-debug.log*
 yarn-debug.log*
