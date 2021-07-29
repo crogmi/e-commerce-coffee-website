@@ -1,15 +1,18 @@
 img {
-    max-width: 500px;
+    max-width: 25rem;
 }
 
-.product-container {
-    display: grid;
-}
-
-.product-links {
+.product-list {
+    width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
+    flex-wrap: wrap;
+    text-decoration: none;
+}
+
+.product {
+    display: block;
     text-align: center;
 }
 
@@ -17,7 +20,11 @@ Link {
     text-decoration: none;
 }
 
-.product-name {
+.product-link {
     text-decoration: none;
     color: black;
+}
+
+.product-link:hover {
+    text-decoration: underline;
 }

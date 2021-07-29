@@ -97,6 +97,8 @@ const OrderForm = (props) => {
                         data-item-custom3-value={temp}
                         data-item-custom4-name="Syrup"
                         data-item-custom4-value={syrup}
+                        data-item-custom5-name="Special requests"
+                        data-item-custom5-type="textarea"
                         data-item-quantity={quantity} >
                     Add to cart
                 </button>
