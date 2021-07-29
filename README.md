@@ -15,7 +15,9 @@
 
 ## Features
 
-
+- Utilizes React Router for easy navigation throughout web pages.
+- Utilizes SnipCart and Stripe to automate checkout and payment processing.
+- 
 
 ## Project Status
 
@@ -23,11 +25,12 @@ The project is still in progress. Updates will be made continuously in the comin
 
 ## Room for Improvement
 
-
+- Integration of search bar to allow users to quickly find their desired products.
+- Completed front-end with CSS styling on each page.
 
 ## Acknowledgment
 
-
+- The project idea was provided by upGrad blog.
 
 ## Contact
 

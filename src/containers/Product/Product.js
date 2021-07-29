@@ -11,17 +11,16 @@ import './Product.css';
 
 const Product = (props) => {
     let {_id} = props.match.params;
-    const product = products.find(product => product._id === _id);
+    const product = products.find(product => product.id === _id);
     let {name, price, description, imageIndex} = product;
-    price = price.toFixed(2);
 
     const images = [LatteImg, CoffeeImg, ColdbrewImg, EspressoImg];
     
     return (
-        <div className='product'>
+        <div className='product-page'>
             <h1>{name}</h1>
             <img src={images[imageIndex]} alt=''/>
-            <h3>{price}</h3>
+            <h3>${price}</h3>
             <h3>{description}</h3>
             <OrderForm product={product}
                        image={images[imageIndex]} />

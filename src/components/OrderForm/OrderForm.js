@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './OrderForm.css';
 
 const OrderForm = (props) => {
     const product = props.product;
@@ -17,9 +18,9 @@ const OrderForm = (props) => {
     const tempChange = product.tempChange;
     
     return (
-        <div>
+        <div className="order-form">
             <form>
-                <label for='custom-milk'>Milk</label>
+                <label className='custom-label' for='custom-milk'>Milk</label>
                 <select className='custom-option' 
                         id='custom-milk' 
                         onChange={(e) => setMilk(e.target.value)}>
@@ -29,7 +30,7 @@ const OrderForm = (props) => {
                     <option value='2%' key='3'>2%</option>
                     <option value ='Soy' key='4'>Soy</option>
                 </select>
-                <label for ='custom-flavor'>Flavor</label>
+                <label className='custom-label' for='custom-flavor'>Flavor</label>
                 {
                     flavorChange ? 
                         <select className='custom-option' 
@@ -49,7 +50,7 @@ const OrderForm = (props) => {
                             <option value={flavor} selected='selected' key='0'>{flavor}</option>
                         </select>
                 }
-                <label for='custom-temp'>Hot / Iced ?</label>
+                <label className='custom-label' for='custom-temp'>Hot / Iced ?</label>
                 {
                     tempChange ? 
                         <select className='custom-option' 
@@ -65,22 +66,23 @@ const OrderForm = (props) => {
                             <option value={temp} selected='selected' key='0'>{temp}</option>
                         </select>
                 }
-                <label for='custom-syrup'>Syrup</label>
+                <label className='custom-label' for='custom-syrup'>Syrup</label>
                 <input className='custom-option' 
                         id='custom-syrup'
                         type='number'
                         onChange={(e) => setSyrup(e.target.value)}
                         value={syrup} />
-                <label for='quantity'>Quantity</label>
-                <input id='quantity' 
+                <label className='custom-label' for='quantity'>Quantity</label>
+                <input className='custom-option'
+                       id='quantity' 
                        type='number' 
                        placeholder='1'
                        onChange={(e) => setQuantity(e.target.value)}
                        value={quantity} />
-                <button class='snipcart-add-item'
-                        data-item-id={product._id}
+                <button className='snipcart-add-item'
+                        data-item-id={product.id}
                         data-item-price={price}
-                        data-item-url={`/order/${product._id}`}
+                        data-item-url={`/productlist.json`}
                         data-item-description={product.description}
                         data-item-image={props.image}
                         data-item-name={name}
