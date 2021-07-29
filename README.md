@@ -1,4 +1,4 @@
-# E-commerce Coffee Website
+# Online Ordering Website - Coffee Shop
 
 ## Table of Contents
 
@@ -17,7 +17,6 @@
 
 - Utilizes React Router for easy navigation throughout web pages.
 - Utilizes SnipCart and Stripe to automate checkout and payment processing.
-- 
 
 ## Project Status
 
